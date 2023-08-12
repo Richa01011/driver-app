@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div class="flex flex-col min-h-screen">
+      <header class="sticky z-50 top-0 bg-zinc-900 py-4">
+        <div class="container">
+          <h1 class="text-3xl">Профиль</h1>
+        </div>
+      </header>
+      <main class="flex-auto">
+        <div class="container">
+          <div class="flex gap-2 mb-3">
+            <div class="flex-shrink-0 flex-grow-0 basis-[31.780vw] w-[31.780vw] h-[42.373vw]"><img class="w-full h-full object-cover" src="./assets/images/face-placeholder.jpg" alt="Иван"></div>
+            <div class="space-y-4">
+              <p>Водитель категории B, C, D, E</p>
+              <h1 class="font-bold text-xl">Иванов Иван Иванович</h1>
+              <div class="space-y-1">
+                <div class="flex justify-between">
+                  <p>Рейтинг</p>
+                  <p class="font-bold">4,23</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Квалификация</p>
+                  <p class="font-bold">ГУРУ (3)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3 mb-8">
+            <div class="flex">
+              <p class="w-1/2">Контактный телефон</p>
+              <p class="w-1/2">+7-966-785-98-65</p>
+            </div>
+            <div class="flex">
+              <p class="w-1/2">E-mail авторизации</p>
+              <p class="w-1/2">ivinov@mailru</p>
+            </div>
+            <div class="flex">
+              <p class="w-1/2">Назначенные транспортные средства</p>
+              <div class="w-1/2">
+                <p>А5435АА44 (Термофургон)</p>
+                <p>А5423АА44 (Бортовой)</p>
+                <p>А5412АА44 (Цистерна)</p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6 mb-8">
+            <p class="font-bold text-3xl">Статистика заявок</p>
+            <ul class="space-y-4">
+              <li class="flex justify-between gap-4">
+                <p>Вcего заявок выполнено в текущем месяце</p>
+                <p>880</p>
+              </li>
+              <li class="flex justify-between gap-4">
+                <p>Вcего заявок невыполнено в текущем месяце</p>
+                <p>195</p>
+              </li>
+              <li class="flex justify-between gap-4">
+                <p>Заявок в работе на текущий день, на данное ТС</p>
+                <p>40</p>
+              </li>
+              <li class="flex justify-between gap-4">
+                <p>Заявок выполненно на текущий день, на данное ТС</p>
+                <p>15</p>
+              </li>
+              <li class="flex justify-between gap-4">
+                <p>Заявок отменено</p>
+                <p>5</p>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <div class="flex justify-between font-bold text-3xl">
+              <p>Процент успеха</p>
+              <p>77,78%</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="sticky z-50 bottom-0 py-3">
+        <div class="container">
+          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-7 py-4"><a class="flex flex-col items-center text-neutral-400" href="/"><i class="fa-solid fa-list-ul text-2xl"></i><span>Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="/projects.html"><i class="fa-solid fa-paste text-2xl"></i><span>Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="/profile.html"><i class="fa-regular fa-user text-2xl"></i><span>Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="/settings.html"><i class="fa-solid fa-gear text-2xl"></i><span>Настройки</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

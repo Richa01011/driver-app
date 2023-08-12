@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявки</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div class="flex flex-col min-h-screen">
+      <header class="sticky z-50 top-0 bg-zinc-900 py-4">
+        <div class="container">
+          <div class="space-y-4">
+            <h1 class="text-3xl">Заявки</h1>
+            <label class="flex bg-zinc-950 border border-gray-400 rounded-lg p-4 cursor-text">
+              <input class="flex-auto bg-transparent border-b border-gray-400 text-lg focus:outline-none placeholder:text-gray-400 placeholder:text-right" type="search" placeholder="Поиск">
+            </label>
+          </div>
+        </div>
+      </header>
+      <main class="flex-auto">
+        <section class="mb-6 space-y-5">
+          <div class="border-y border-gray-300 py-3">
+            <div class="container">
+              <h2 class="text-center text-xl">Обезвреживание (Утилизация) отходов</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="space-y-4"><a class="flex flex-col border border-gray-300 rounded-xl p-3" href="/request.html">
+                <h3 class="font-bold text-xl truncate">Липецк Хорошавина д.2 к.2</h3>
+                <p class="text-lg truncate">Заявка №42323 (Б, В)</p>
+                <p class="truncate">ООО МЕДИКАЛ ПЛЮС</p></a><a class="flex flex-col border border-gray-300 rounded-xl p-3" href="/request.html">
+                <h3 class="font-bold text-xl truncate">Липецк Яна Берзина д.5</h3>
+                <p class="text-lg truncate">Заявка №323423 (Б, В, Г)</p>
+                <p class="truncate">Липецкая городская поликлиника №17</p></a><a class="flex flex-col border border-gray-300 rounded-xl p-3" href="/request.html">
+                <h3 class="font-bold text-xl truncate">Липецк Адмирала Лазарева 17Б</h3>
+                <p class="text-lg truncate">Заявка №5345345 (Б, В, Г)</p>
+                <p class="truncate">Центральный городской морг имени Врангеля</p></a></div>
+          </div>
+        </section>
+        <section class="space-y-5">
+          <div class="border-y border-gray-300 py-3">
+            <div class="container">
+              <h2 class="text-center text-xl">Утилизация (покупка) отходов</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="space-y-4"><a class="flex flex-col border border-gray-300 rounded-xl p-3" href="/request.html">
+                <h3 class="font-bold text-xl truncate">Липецк Зои Космодемьянской 4</h3>
+                <p class="text-lg truncate">Заявка №54345 (Макулатура)</p>
+                <p class="truncate">База строительных материалов "Аверис"</p></a></div>
+          </div>
+        </section>
+      </main>
+      <footer class="sticky z-50 bottom-0 py-3">
+        <div class="container">
+          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-7 py-4"><a class="flex flex-col items-center text-neutral-400" href="/"><i class="fa-solid fa-list-ul text-2xl"></i><span>Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="/projects.html"><i class="fa-solid fa-paste text-2xl"></i><span>Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="/profile.html"><i class="fa-regular fa-user text-2xl"></i><span>Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="/settings.html"><i class="fa-solid fa-gear text-2xl"></i><span>Настройки</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

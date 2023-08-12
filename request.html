@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявки</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div class="flex flex-col min-h-screen">
+      <header class="sticky z-50 top-0 bg-zinc-900 py-4">
+        <div class="container">
+          <div class="space-y-4">
+            <h1 class="text-3xl">Заявки</h1>
+            <label class="flex bg-zinc-950 border border-gray-400 rounded-lg p-4 cursor-text">
+              <input class="flex-auto bg-transparent border-b border-gray-400 text-lg focus:outline-none placeholder:text-gray-400 placeholder:text-right" type="search" placeholder="Поиск">
+            </label>
+          </div>
+        </div>
+      </header>
+      <main class="flex-auto">
+        <div class="mb-2">
+          <div class="container">
+            <div class="flex gap-2"><a class="flex items-center gap-1 bg-firm-rose-100 rounded-md py-2 px-3" href="/requests.html"><i class="fa-solid fa-circle-chevron-left text-3xl"></i><span class="text-xl text-white">Назад</span></a></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="border border-gray-300 rounded-md p-2">
+            <h2 class="font-medium text-xl">Липецк Хорошавина д.2 к.2</h2><br>
+            <p>Центр лечения боли (приёмное отделение)</p><br>
+            <p>Заявка №4234234 (Б, В)</p><br>
+            <p>Обезвреживание (Утилизация) отходов</p>
+            <p>Договор №234/433</p><br>
+            <p>ООО МЕДИКАЛ ПЛЮС</p>
+            <p>Контактное лицо от ЛПУ:</p>
+            <p>Иванова Мария Ивановна</p><a href="tel:+7-920-655-98-87">+7-920-655-98-87</a><span>, </span><a href="tel:+74742-44-45-47">+74742-44-45-47</a><br><br>
+            <p>После 14:00</p>
+            <form class="flex flex-col space-y-4 p-4 text-lg">
+              <div class="space-y-2">
+                <div class="flex">
+                  <label class="w-1/2 pr-2">
+                    <p>Тип отхода Б</p>
+                    <input class="w-full bg-white rounded-sm text-center text-black focus:outline-none" type="number" placeholder="15">
+                  </label>
+                  <div class="w-1/2 pl-2">
+                    <p>Ед. изм.</p>
+                    <p>КГ</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <label class="w-1/2 pr-2">
+                    <p>Тип отхода В</p>
+                    <input class="w-full bg-white rounded-sm text-center text-lg text-black focus:outline-none" type="number" placeholder="2">
+                  </label>
+                  <div class="w-1/2 pl-2">
+                    <p>Ед. изм.</p>
+                    <p>Контейнер 35 л</p>
+                  </div>
+                </div>
+                <label class="block">
+                  <p>Комментарий водителя</p>
+                  <input class="w-full bg-white rounded-sm text-center text-lg text-black focus:outline-none" type="text" placeholder="оставьте комментарий к заявке">
+                </label>
+              </div>
+              <button class="self-center bg-firm-rose-100 rounded-md py-2 px-6" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="sticky z-50 bottom-0 py-3">
+        <div class="container">
+          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-7 py-4"><a class="flex flex-col items-center text-neutral-400" href="/"><i class="fa-solid fa-list-ul text-2xl"></i><span>Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="/projects.html"><i class="fa-solid fa-paste text-2xl"></i><span>Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="/profile.html"><i class="fa-regular fa-user text-2xl"></i><span>Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="/settings.html"><i class="fa-solid fa-gear text-2xl"></i><span>Настройки</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

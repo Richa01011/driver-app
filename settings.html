@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div class="flex flex-col min-h-screen">
+      <header class="sticky z-50 top-0 bg-zinc-900 py-4">
+        <div class="container">
+          <h1 class="text-3xl">Настройки</h1>
+        </div>
+      </header>
+      <main class="flex-auto">
+        <div class="container">
+          <div class="overflow-x-hidden overflow-y-auto max-h-[35vh]">
+            <div class="space-y-8">
+              <label class="switch-checkbox">
+                <input type="checkbox" checked><span>А6546553 (Термофургон)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6565443 (Бортовой)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6546564 (Цистерна)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6546553 (Термофургон)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6565443 (Бортовой)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6546564 (Цистерна)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6546553 (Термофургон)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6565443 (Бортовой)</span>
+              </label>
+              <label class="switch-checkbox">
+                <input type="checkbox"><span>А6546564 (Цистерна)</span>
+              </label>
+            </div>
+          </div>
+          <div class="py-4">
+            <div class="flex items-center gap-1">
+              <div class="w-4 h-[1px] bg-gray-300"></div>
+              <div class="text-lg">CПИСОК</div>
+              <div class="flex-auto h-[1px] bg-gray-300"></div>
+            </div>
+            <div class="py-3">
+              <label class="switch-checkbox rtl">
+                <input type="checkbox" checked><span>Показывать завершённые заявки</span>
+              </label>
+            </div>
+          </div>
+          <div class="py-4">
+            <div class="flex items-center gap-1">
+              <div class="w-4 h-[1px] bg-gray-300"></div>
+              <div class="text-lg">УВЕДОМЛЕНИЯ</div>
+              <div class="flex-auto h-[1px] bg-gray-300"></div>
+            </div>
+            <div class="py-3">
+              <label class="switch-checkbox rtl">
+                <input type="checkbox" checked><span>Уведомлять о новых заявках</span>
+              </label>
+            </div>
+          </div>
+          <div class="py-4">
+            <div class="flex items-center gap-1">
+              <div class="w-4 h-[1px] bg-gray-300"></div>
+              <div class="text-lg">ВХОД</div>
+              <div class="flex-auto h-[1px] bg-gray-300"></div>
+            </div>
+            <div class="py-3">
+              <label class="switch-checkbox rtl">
+                <input type="checkbox" checked><span>Автоматически входить</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="sticky z-50 bottom-0 py-3">
+        <div class="container">
+          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-7 py-4"><a class="flex flex-col items-center text-neutral-400" href="/"><i class="fa-solid fa-list-ul text-2xl"></i><span>Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="/projects.html"><i class="fa-solid fa-paste text-2xl"></i><span>Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="/profile.html"><i class="fa-regular fa-user text-2xl"></i><span>Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="/settings.html"><i class="fa-solid fa-gear text-2xl"></i><span>Настройки</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
