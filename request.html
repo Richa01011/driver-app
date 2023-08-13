@@ -22,57 +22,70 @@
         </div>
       </header>
       <main class="flex-auto">
-        <div class="mb-2">
+        <div id="request-screen">
+          <div class="mb-2">
+            <div class="container">
+              <div class="flex gap-2"><a class="flex justify-center items-center gap-1 w-1/2 bg-firm-rose-100 rounded-md py-2 px-3" href="https://richa01011.github.io/driver-app/"><i class="fa-solid fa-angle-left text-3xl"></i><span class="text-xl text-white">Назад</span></a>
+                <button class="flex justify-center items-center gap-1 w-1/2 bg-firm-rose-100 rounded-md py-2 px-3" id="cancel-request"><i class="fa-solid fa-close text-3xl"></i><span class="text-xl text-white">Отменить</span></button>
+              </div>
+            </div>
+          </div>
           <div class="container">
-            <div class="flex gap-2"><a class="flex items-center gap-1 bg-firm-rose-100 rounded-md py-2 px-3" href="https://richa01011.github.io/driver-app/"><i class="fa-solid fa-circle-chevron-left text-3xl"></i><span class="text-xl text-white">Назад</span></a></div>
+            <div class="border border-gray-300 rounded-md p-2">
+              <h2 class="font-medium text-xl">Липецк Хорошавина д.2 к.2</h2><br>
+              <p>Центр лечения боли (приёмное отделение)</p><br>
+              <p>Заявка №4234234 (Б, В)</p><br>
+              <p>Обезвреживание (Утилизация) отходов</p>
+              <p>Договор №234/433</p><br>
+              <p>ООО МЕДИКАЛ ПЛЮС</p>
+              <p>Контактное лицо от ЛПУ:</p>
+              <p>Иванова Мария Ивановна</p><a href="tel:+7-920-655-98-87">+7-920-655-98-87</a><span>, </span><a href="tel:+74742-44-45-47">+74742-44-45-47</a><br><br>
+              <p>После 14:00</p>
+              <form class="flex flex-col space-y-4 p-4 text-lg">
+                <div class="space-y-2">
+                  <div class="flex">
+                    <label class="w-1/2 pr-2">
+                      <p>Тип отхода Б</p>
+                      <input class="w-full bg-white rounded-sm text-center text-black focus:outline-none" type="number" placeholder="15">
+                    </label>
+                    <div class="w-1/2 pl-2">
+                      <p>Ед. изм.</p>
+                      <p>КГ</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <label class="w-1/2 pr-2">
+                      <p>Тип отхода В</p>
+                      <input class="w-full bg-white rounded-sm text-center text-lg text-black focus:outline-none" type="number" placeholder="2">
+                    </label>
+                    <div class="w-1/2 pl-2">
+                      <p>Ед. изм.</p>
+                      <p>Контейнер 35 л</p>
+                    </div>
+                  </div>
+                  <label class="block">
+                    <p>Комментарий водителя</p>
+                    <input class="w-full bg-white rounded-sm text-left text-lg text-black focus:outline-none placeholder:text-center" type="text" placeholder="оставьте комментарий к заявке">
+                  </label>
+                </div>
+                <button class="self-center bg-firm-rose-100 rounded-md py-2 px-6" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="container">
-          <div class="border border-gray-300 rounded-md p-2">
-            <h2 class="font-medium text-xl">Липецк Хорошавина д.2 к.2</h2><br>
-            <p>Центр лечения боли (приёмное отделение)</p><br>
-            <p>Заявка №4234234 (Б, В)</p><br>
-            <p>Обезвреживание (Утилизация) отходов</p>
-            <p>Договор №234/433</p><br>
-            <p>ООО МЕДИКАЛ ПЛЮС</p>
-            <p>Контактное лицо от ЛПУ:</p>
-            <p>Иванова Мария Ивановна</p><a href="tel:+7-920-655-98-87">+7-920-655-98-87</a><span>, </span><a href="tel:+74742-44-45-47">+74742-44-45-47</a><br><br>
-            <p>После 14:00</p>
-            <form class="flex flex-col space-y-4 p-4 text-lg">
-              <div class="space-y-2">
-                <div class="flex">
-                  <label class="w-1/2 pr-2">
-                    <p>Тип отхода Б</p>
-                    <input class="w-full bg-white rounded-sm text-center text-black focus:outline-none" type="number" placeholder="15">
-                  </label>
-                  <div class="w-1/2 pl-2">
-                    <p>Ед. изм.</p>
-                    <p>КГ</p>
-                  </div>
-                </div>
-                <div class="flex">
-                  <label class="w-1/2 pr-2">
-                    <p>Тип отхода В</p>
-                    <input class="w-full bg-white rounded-sm text-center text-lg text-black focus:outline-none" type="number" placeholder="2">
-                  </label>
-                  <div class="w-1/2 pl-2">
-                    <p>Ед. изм.</p>
-                    <p>Контейнер 35 л</p>
-                  </div>
-                </div>
-                <label class="block">
-                  <p>Комментарий водителя</p>
-                  <input class="w-full bg-white rounded-sm text-center text-lg text-black focus:outline-none" type="text" placeholder="оставьте комментарий к заявке">
-                </label>
-              </div>
-              <button class="self-center bg-firm-rose-100 rounded-md py-2 px-6" type="submit">Отправить</button>
-            </form>
+        <div class="container hidden" id="cancel-request-screen">
+          <div class="flex flex-col space-y-2 text-lg">
+            <label class="block">
+              <p>Оставьте комментарий</p>
+              <input class="w-full bg-white rounded-sm text-left text-lg text-black focus:outline-none placeholder:text-center" type="text" placeholder="оставьте комментарий к заявке">
+            </label>
+            <button class="self-center bg-firm-rose-100 rounded-md py-2 px-6" type="submit">Отправить</button>
           </div>
         </div>
       </main>
       <footer class="fixed z-50 bottom-0 w-full py-3">
         <div class="container">
-          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-7 py-4"><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/"><i class="fa-solid fa-list-ul text-2xl"></i><span>Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/projects.html"><i class="fa-solid fa-paste text-2xl"></i><span>Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/profile.html"><i class="fa-regular fa-user text-2xl"></i><span>Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/settings.html"><i class="fa-solid fa-gear text-2xl"></i><span>Настройки</span></a>
+          <div class="flex justify-between items-center bg-neutral-700 rounded-3xl px-3 sm:px-4 md:px-7 py-3 sm:py-4"><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/"><i class="fa-solid fa-list-ul text-xl md:text-2xl"></i><span class=" text-sm sm:text-base">Заявки</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/projects.html"><i class="fa-solid fa-paste text-xl md:text-2xl"></i><span class=" text-sm sm:text-base">Проекты</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/profile.html"><i class="fa-regular fa-user text-xl md:text-2xl"></i><span class=" text-sm sm:text-base">Профиль</span></a><a class="flex flex-col items-center text-neutral-400" href="https://richa01011.github.io/driver-app/settings.html"><i class="fa-solid fa-gear text-xl md:text-2xl"></i><span class=" text-sm sm:text-base">Настройки</span></a>
           </div>
         </div>
       </footer>
